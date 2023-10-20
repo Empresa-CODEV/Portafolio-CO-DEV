@@ -1,0 +1,22 @@
+{
+  "name": "portafolio-co-dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Empresa-CODEV/Portafolio-CO-DEV.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Empresa-CODEV/Portafolio-CO-DEV/issues"
+  },
+  "homepage": "https://github.com/Empresa-CODEV/Portafolio-CO-DEV#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.2"
+  }
+}
