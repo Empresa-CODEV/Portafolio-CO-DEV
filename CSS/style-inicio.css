@@ -300,3 +300,55 @@ nav.bg-codev {
     width: 36px;
     height: 9px;
 }
+
+/* ====== Estilos Responsivos ====== */
+
+@media (max-width: 992px) {
+    .carousel-titulo-text {
+        font-size: 30px; 
+    }
+
+    .carousel-parrafo-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-titulo-text {
+        font-size: 29px; 
+    }
+
+    .carousel-parrafo-text {
+        font-size: 17px;
+    }
+} 
+
+@media (max-width: 530px) {
+    .carousel-titulo-text {
+        font-size: 25px; 
+    }
+
+    .carousel-parrafo-text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 422px) {
+    .carousel-titulo-text {
+        font-size: 19px; 
+    }
+
+    .carousel-parrafo-text {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .carousel-titulo-text {
+        font-size: 18px; 
+    }
+
+    .carousel-parrafo-text {
+        font-size: 10px;
+    }
+}
