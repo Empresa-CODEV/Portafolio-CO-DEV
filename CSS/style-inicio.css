@@ -1,0 +1,40 @@
+/* ====== Fuentes ====== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@700&family=Roboto+Flex:opsz,wght@8..144,200&display=swap');
+
+/* ====== Variables ====== */
+
+:root {
+    --bg-Inicio : #010626;
+    --bg-Botones : #056CF2;
+    --bg-Blanco : #FFFFFF;
+    --bg-Blanco2 : #F2F2F2;
+    --bg-Whatsapp : #009900;
+}
+
+/* ====== Estilos del encabezado (Header) ====== */
+
+.header-carousel {
+    /* Fondo del Encabezado Img */
+    background-image: url('../img/Img-Inicio-1.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    transition: background-image 0.5s ease;
+}
+
+.header-overlay {
+    /* Capa de Traslucido */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1, 6, 38, 0.9);
+}
+
+.header-content {
+    /* Contenido del Header */
+    position: relative;
+    z-index: 1; 
+}
