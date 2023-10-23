@@ -12,6 +12,56 @@
     --bg-Whatsapp : #009900;
 }
 
+/* ====== Botones Preterminados ====== */
+
+.float {
+    /* Estilos Boton de Whatsapp */
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background-color: var(--bg-Whatsapp);
+    bottom: 40px;
+    right: 40px;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.float img {
+    /* Tamaño Icon Boton Whatsapp */
+    width: 30px;
+    height: 30px;
+}
+
+.float:hover {
+    background-color: #02af02;
+}
+
+.float-2 {
+    /* Estilo de Boton Chevron Down */
+    position: absolute;
+    bottom: 10px;
+    background-color: rgba(242, 242, 242, 0.10);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.float-2 img {
+    /* Tamaño Icon Boton Chevron Down */
+    width: 20px;
+    height: 20px;
+}
+
 /* ====== Estilos del encabezado (Header) ====== */
 
 .header-carousel {
