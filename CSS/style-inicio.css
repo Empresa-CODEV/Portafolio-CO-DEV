@@ -206,3 +206,97 @@ nav.bg-codev {
     width: 50px;
     height: 50px;
 }
+
+/* ====== Estilos para la seccion de hero (Hero) ====== */
+
+#hero {
+    /* Margenes de Hero */
+    margin: 0 auto;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-inner {
+    /* Margenes y Color del Carrusel */
+    display: flex;
+    width: 100%;
+    max-width: 1085px;
+    height: 346px;
+    padding: 0px 16px;
+    margin: 0 auto;
+    border-radius: 30px;
+    background: rgba(242, 242, 242, 0.20);
+    text-align: center;
+}
+
+.container-titulo-text {
+    /* Margen de los Titulos */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 60px auto; 
+    max-width: 1028px;
+}
+
+.carousel-titulo-text {
+    /* Estilos de los Titulos */
+    color: var(--bg-Blanco2);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px; 
+    text-transform: capitalize;
+}
+
+.container-parrafo-text {
+    /* Margen de los Parrafos */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: -20px auto; 
+    max-width: 816px; 
+}
+
+.carousel-parrafo-text {
+    /* Estilos de los Parrafos */
+    color: var(--bg-Blanco2);
+    text-align: center;
+    font-family: Roboto Flex;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 24px; 
+    letter-spacing: 3px;
+}
+
+.carousel-indicators {
+    /* Margen de los Botones Indicadores del Carrusel */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.carousel-indicators button.active {
+    /* Estilos de los Botones Indicadores del Carrusel Activo */
+    background-color: var(--bg-Botones);
+    border: 1px solid var(--bg-Botones);
+    width: 36px;
+    height: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(5, 108, 242, 0.7);
+}
+
+.carousel-indicators button:not(.active) {
+    /* Estilos de los Botones Indicadores del Carrusel No Activo */
+    background-color: transparent;
+    border: 1px solid var(--bg-Blanco);
+    width: 36px;
+    height: 9px;
+}
