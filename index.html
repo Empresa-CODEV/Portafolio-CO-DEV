@@ -187,52 +187,69 @@
 
   <body>
     <!-- Contactenos -->
-    <section class="container-contactenos">
+    <section class="container-contactenos py-4 px-6">
       <div class="subtitle-container text-white mb-7">
-        <h2 class="text-center display-6">Contactenos</h2>
-        <p class="lead text-center">¿Listo para conectarte con nosotros? Estamos ansiosos por recibir tu mensaje y trabajar juntos en nuestra
-          misión.</p>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-md-5 ps-1">
-          <div class="imagen container">
-            <img src="./img/svg/Email campaign-amico.svg" class="img-fluid" alt="svg_img">
-          </div>
+        <div class="container">
+          <h2 class="text-center display-5">Contactenos</h2>
+          <hr class="border border-1 ">
         </div>
-        <div class="col-md-5 mb-3 ps-5">
-          <div class="form container bg-white p-3 rounded">
-            <form action="" class="container">
-              <div class="mb-3 row">
-                <label for="nombre" class="form-label">
-                  <span class="">Nombre</span>
-                  <input type="text" id="nombre" class="form-control border-0 border-primary border-bottom border-1">
-                </label>
-              </div>
-              <div class="mb-3 row">
-                <label for="email">
-                  <span class="">Email</span>
-                  <input type="text" id="email" class="form-control border-0 border-primary border-bottom border-1">
-                </label>
-              </div>
-              <div class="mb-3 row">
-                <label for="telefono">
-                  <span class="">Teléfono (+54)</span>
-                  <input type="number" id="telefono"
-                    class="form-control border-0 border-primary border-bottom border-1">
-                </label>
-              </div>
-              <div class="mb-3 row">
-                <label for="mensaje">
-                  <span class="">Mensaje</span>
-                  <Textarea class="form-control border-0 border-primary border-bottom border-1" id="mensaje"></Textarea>
-                </label>
-              </div>
-              <div class="row justify-content-center">
-                <div class="text-center">
-                  <button class="btn enviar text-white">Enviar</button>
+        <p class="lead text-center pb-4">
+          ¿Listo para conectarte con nosotros? Estamos ansiosos por recibir tu mensaje y
+          trabajar juntos en nuestra misión.
+        </p>
+      </div>
+      <div class="container-md bg-white py-5 rounded mb-4">
+        <div class="row justify-content-center gap-5">
+          <div class="col-md-5 img">
+            <div class="img container">
+              <img src="./img/svg/Email campaign-amico.svg" class="img-fluid  align-items-center" alt="svg_img">
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="form container">
+              <form action="" class="container">
+                <div class="mb-3 row">
+                  <div class="col">
+                    <label for="nombre" class="form-label">
+                      <span class="">Nombre</span>
+                      <input type="text" id="nombre" class="form-control border-0 border-primary border-bottom border-1">
+                    </label>
+                  </div>
+                  <div class="col">
+                    <label for="telefono">
+                      <span class="">Teléfono (+54)</span>
+                      <input type="text" id="telefono"
+                        class="form-control border-0 border-primary border-bottom border-1">
+                    </label>
+                  </div>
                 </div>
-              </div>
-            </form>
+                <div class="mb-3 row">
+                  <label for="email">
+                    <span class="">Email</span>
+                    <input type="text" id="email" class="form-control border-0 border-primary border-bottom border-1">
+                  </label>
+                </div>
+                <div class="mb-3 row">
+                  <label for="asunto">
+                    <span class="">Asunto</span>
+                    <input type="text" id="asunto"
+                      class="form-control border-0 border-primary border-bottom border-1">
+                  </label>
+                </div>
+                <div class="mb-3 row">
+                  <label for="mensaje">
+                    <span class="">Mensaje</span>
+                    <Textarea class="form-control border-0 border-primary border-bottom border-1"
+                      id="mensaje" rows="4"></Textarea>
+                  </label>
+                </div>
+                <div class="row justify-content-center mt-5">
+                  <div class="text-center">
+                    <button class="btn btn-lg enviar text-white">Enviar</button>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -247,6 +264,7 @@
   <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   <!-- Archivo JS -->
   <script src="/JS/background-image.js"></script>
+  <script src="/JS/utils.js"></script>
 </body>
 
 </html>

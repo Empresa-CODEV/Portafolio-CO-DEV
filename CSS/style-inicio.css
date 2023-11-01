@@ -14,7 +14,11 @@
 
 /* ====== Bootstrap config ====== */
     .form-control:focus {
-        box-shadow: none
+        box-shadow: none;
+    }
+
+    .complete {
+        background-color: #e8f0fe;
     }
 /* ====== Botones Preterminados ====== */
 
@@ -361,6 +365,13 @@ nav.bg-codev {
 }
 .btn.enviar{
     background-color: var(--bg-Botones);
+}
+hr {
+    border-color:white;
+    margin: 0 25.5em 1em;
+}
+textarea {
+    resize: none;
 }
 /* ====== Estilos Responsivos ====== */
 
