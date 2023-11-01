@@ -12,6 +12,10 @@
     --bg-Whatsapp : #009900;
 }
 
+/* ====== Bootstrap config ====== */
+    .form-control:focus {
+        box-shadow: none
+    }
 /* ====== Botones Preterminados ====== */
 
 .float {
@@ -351,6 +355,13 @@ nav.bg-codev {
     height: 9px;
 }
 
+/* ====== Contactenos section ====== */
+.container-contactenos {
+    background-color: var(--bg-Botones);
+}
+.btn.enviar{
+    background-color: var(--bg-Botones);
+}
 /* ====== Estilos Responsivos ====== */
 
 @media (max-width: 992px) {
