@@ -1,0 +1,23 @@
+/* ====== Bootstrap config ====== */
+.form-control:focus {
+    box-shadow: none;
+}
+
+.complete {
+    background-color: #e8f0fe;
+}
+
+/* ====== Contactenos section ====== */
+.container-contactenos {
+    background-color: var(--bg-Botones);
+}
+.btn.enviar{
+    background-color: var(--bg-Botones);
+}
+hr {
+    border-color:white;
+    margin: 0 25.5em 1em;
+}
+textarea {
+    resize: none;
+}
