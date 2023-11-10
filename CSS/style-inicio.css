@@ -404,21 +404,6 @@ nav.bg-codev {
     color: rgb(15, 119, 255);
 }
 
-
-/* ====== Contactenos section ====== */
-.container-contactenos {
-    background-color: var(--bg-Botones);
-}
-.btn.enviar{
-    background-color: var(--bg-Botones);
-}
-hr {
-    border-color:white;
-    margin: 0 25.5em 1em;
-}
-textarea {
-    resize: none;
-}
 /* ====== Estilos Responsivos ====== */
 
 @media (max-width: 992px) {

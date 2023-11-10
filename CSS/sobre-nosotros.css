@@ -1,30 +1,32 @@
-*{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-h1{
+h1 {
     color: #7ba9f4;
 }
+
 #divider {
     border-top: 3px solid #7ba9f4;
     width: 8%;
 }
-#header{
+
+#header {
     color: #a4a4a4;
     text-align: center;
 }
-h5{
+
+h5 {
     color: #737373;
 }
-#content{
+
+#content {
     display: flex;
 }
 
-.icon{
+.icon {
     filter: invert(100%);
     height: 60%;
     width: 60%;
 }
-.circle{
+
+.circle {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,13 +36,14 @@ h5{
     border-radius: 50%;
 }
 
-#texto{
+#texto {
     text-align: left;
-    white-space:wrap ;
+    white-space: wrap;
     max-width: 40%;
     color: #111111;
 }
-#circles{
+
+#circles {
     width: 10%;
     height: 95vh;
     display: flex;
@@ -49,15 +52,16 @@ h5{
 }
 
 
-#big-vector{
+#big-vector {
     max-width: 50%;
     height: 100%;
     margin: 2%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#team-check{
+
+#team-check {
     width: 70%;
     height: 70%;
 }
