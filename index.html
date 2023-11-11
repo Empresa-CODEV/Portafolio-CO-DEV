@@ -2,16 +2,18 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CO-DEV</title>
-  <!-- CSS BOOTSTRAP -->
-  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <!-- Archivo CSS -->
-  <link rel="stylesheet" href="/CSS/style-inicio.css">
-  <link rel="stylesheet" href="/CSS/contactenos.css">
-  <!-- CSS Sobre Nosotros -->
-  <link rel="stylesheet" href="/CSS/sobre-nosotros.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CO-DEV</title>
+    <!-- CSS BOOTSTRAP -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Archivo CSS -->
+    <link rel="stylesheet" href="CSS/style-inicio.css">
+    <link rel="stylesheet" href="CSS/style-footer.css">
+    <link rel="stylesheet" href="CSS/style-btn-whatsapp.css">
+    <!-- CSS secciones -->
+    <link rel="stylesheet" href="/CSS/contactenos.css">
+    <link rel="stylesheet" href="/CSS/sobre-nosotros.css">
 </head>
 
 <body>
@@ -310,8 +312,7 @@
         <hr class="border border-1 ">
       </div>
       <p class="lead text-center pb-4">
-        ¿Listo para conectarte con nosotros? Estamos ansiosos por recibir tu mensaje y
-        trabajar juntos en nuestra misión.
+        ¿Listo para conectarte con nosotros? Estamos ansiosos por recibir tu mensaje y trabajar juntos en nuestra misión.
       </p>
     </div>
     <div class="container-md bg-white py-5 rounded mb-4">
@@ -328,38 +329,33 @@
                 <div class="col">
                   <label for="nombre" class="form-label">
                     Nombre
+                    <input required type="text" id="nombre" class="form-control border-0 border-primary border-bottom border-1">
                   </label>
-                  <input required type="text" id="nombre"
-                    class="form-control border-0 border-primary border-bottom border-1">
                 </div>
                 <div class="col">
-                  <label for="telefono">
+                  <label for="telefono" class="form-label">
                     Teléfono (+54)
+                    <input required type="text" id="telefono" class="form-control border-0 border-primary border-bottom border-1">
                   </label>
-                  <input required type="text" id="telefono"
-                    class="mt-2 form-control border-0 border-primary border-bottom border-1">
                 </div>
               </div>
               <div class="mb-3 row">
-                <label for="email">
+                <label for="email" class="form-label">
                   Email
+                  <input required type="email" id="email" class="form-control border-0 border-primary border-bottom border-1">
                 </label>
-                <input required type="email" id="email"
-                  class="form-control border-0 border-primary border-bottom border-1">
               </div>
               <div class="mb-3 row">
-                <label for="asunto">
+                <label class="form-label" for="asunto">
                   Asunto
+                  <input required type="text" id="asunto" class="form-control border-0 border-primary border-bottom border-1">
                 </label>
-                <input required type="text" id="asunto"
-                  class="form-control border-0 border-primary border-bottom border-1">
               </div>
               <div class="mb-3 row">
-                <label for="mensaje">
+                <label class="form-label" for="mensaje">
                   Mensaje
+                  <Textarea required class="form-control border-0 border-primary border-bottom border-1" id="mensaje" rows="4"></Textarea>
                 </label>
-                <Textarea required class="form-control border-0 border-primary border-bottom border-1" id="mensaje"
-                  rows="4"></Textarea>
               </div>
               <div class="row justify-content-center mt-5">
                 <div class="text-center">
@@ -369,16 +365,129 @@
             </form>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- Fin seccion contactenos -->
+  </div>
+</section>
+<!-- Fin seccion contactenos -->
 
-  <!-- JS BOOTSTRAP -->
-  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-  <!-- Archivo JS -->
-  <script src="./JS/background-image.js"></script>
-  <script src="./JS/utils.js"></script>
+    <!-- ====== FOOTER ====== -->
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- Columna 1 - Logo Section -->
+          <div class="container-logo-ft col-md-3 col-lg-3 col-xl-3 mx-auto mt-4">
+            <!-- CO-DEV Logo -->
+            <img src="img/Logo-CO-DEV-Oscuro.png" alt="CO-DEV">
+          </div>
+          <!-- Columna 2 - Enlaces Section -->
+          <div class="container-enlaces-ft col-md-2 col-lg-2 col-xl-2 mx-auto mt-4">
+            <!-- Titulo Enlace -->
+            <div class="container-titulo-enlace">
+              <h5 class="titulo-enlace">
+                Enlaces
+              </h5>
+            </div>
+            <!-- Linea -->
+            <div class="linea-enlace-container">
+              <hr class="linea-enlace mb-3">
+            </div>
+            <!-- Link de Enlaces -->
+            <div class="enlaces-body">
+              <!-- Enlace Inicio -->
+              <a class="nav-link-ft" href="#Inicio">
+                <span class="nav-text-ft"> Inicio </span>
+              </a>
+              <!-- Enlace Servicios -->
+              <a class="nav-link-ft" href="#Servicios">
+                <span class="nav-text-ft"> Servicios </span>
+              </a>
+              <!-- Enlace Sobre Nosotros -->
+              <a class="nav-link-ft" href="#">
+                <span class="nav-text-ft"> Sobre Nosotros </span>
+              </a>
+              <!-- Enlace Equipo -->
+              <a class="nav-link-ft" href="#">
+                <span class="nav-text-ft"> Equipo </span>
+              </a>
+              <!-- Enlace Contactenos -->
+              <a class="nav-link-ft" href="#">
+                <span class="nav-text-ft"> Contactanos </span>
+              </a>
+            </div>
+          </div>
+          <!-- Columna 3 - Redes Sociales Section -->
+          <div class="container-rs-ft col-md-3 col-lg-3 col-xl-3 mx-auto mt-4">
+            <!-- Titulo Redes Sociales -->
+            <div class="container-titulo-rs">
+              <h5 class="titulo-rs">
+                Redes Sociales
+              </h5>
+            </div>
+            <!-- Linea -->
+            <div class="linea-rs-container">
+              <hr class="linea-rs mb-3">
+            </div>
+            <!-- Iconos Redes Sociales -->
+            <div class="footer-redes-sociales">
+              <a href="#">
+                <img src="img/Icon/whatsapp-icon.svg" alt="Whatsapp" class="footer-icon">
+              </a>
+              <a href="#">
+                <img src="img/Icon/instagram-icon.svg" alt="Instagram" class="footer-icon">
+              </a>
+              <a href="#">
+                <img src="img/Icon/facebook-icon.svg" alt="Facebook" class="footer-icon">
+              </a>
+              <a href="#">
+                <img src="img/Icon/linkedin-icon.svg" alt="Linkedin" class="footer-icon">
+              </a>
+              <a href="#">
+                <img src="img/Icon/github-icon.svg" alt="GitHub" class="footer-icon">
+              </a>
+            </div>
+          </div>
+          <!-- Columna 4 - Otros Medios Section -->
+          <div class="container-otrosm-ft col-md-3 col-lg-3 col-xl-3 mx-auto mt-4">
+            <!-- Titulo Otros Medios -->
+            <div class="container-titulo-otrosm">
+              <h5 class="titulo-otrosm">
+                Otros Medios
+              </h5>
+            </div>
+            <!-- Linea -->
+            <div class="linea-otrosm-container">
+              <hr class="linea-otrosm mb-3">
+            </div>
+            <!-- Enlaces de Otros Medios -->
+            <div class="otrosm-body">
+              <a class="nav-link-ft" href="#">
+                <img src="img/Icon/phone-icon.svg" alt="Telefono" class="px-2">
+                <span class="nav-text-ft"> 299-589-2982 </span>
+              </a>
+              <a class="nav-link-ft" href="#">
+                <img src="img/Icon/envelope-icon.svg" alt="Correo Electronico" class="px-2">
+                <span class="nav-text-ft"> codev@gmail.com </span>
+              </a>
+              <a class="nav-link-ft" href="#">
+                <img src="img/Icon/location-dot-icon.svg" alt="Direccion" class="px-2">
+                <span class="nav-text-ft"> Neuquen Capital, Argentina </span>
+              </a>
+            </div>
+          </div>
+          <!-- Copyright -->
+          <div class="container-copyright text-center">
+            <p class="copyright-text">
+              © 2023 CO-DEV. Todos los derechos reservados.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- JS BOOTSTRAP -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <!-- Archivo JS -->
+    <script src="/JS/background-image.js"></script>
+    <script src="/JS/utils.js"></script>
 </body>
 
 </html>
