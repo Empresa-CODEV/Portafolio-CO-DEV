@@ -1,197 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CO-DEV</title>
-    <!-- CSS BOOTSTRAP -->
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <!-- CSS SWIPER -->
-    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
-    <!-- Remixicon -->
-    <link rel="stylesheet" href="./node_modules/remixicon/fonts/remixicon.css">
-    <!-- Archivo CSS -->
-    <link rel="stylesheet" href="CSS/style-inicio.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CO-DEV</title>
+  <!-- CSS BOOTSTRAP -->
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <!-- CSS SWIPER -->
+  <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
+  <!-- Remixicon -->
+  <link rel="stylesheet" href="./node_modules/remixicon/fonts/remixicon.css">
+  <!-- Archivo CSS -->
+  <link rel="stylesheet" href="CSS/style-inicio.css">
+  <link rel="stylesheet" href="CSS/style-equipo.css">
 </head>
+
 <body>
-    <!-- ====== HEADER ====== -->
-    <header id="Inicio" class="header-carousel">
-        <!-- Capa de Traslucido -->
-        <div class="header-overlay"></div>
-        <!-- Container Seccion Inicio -->
-        <div class="container header-content">
-            <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg bg-codev">
-                <div class="container">
-                  <!-- Logo de la Empresa CO-DEV -->
-                  <a class="navbar-brand" href="#Inicio">CO-DEV</a>
-                  <!-- Nav Button -->
-                  <div class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarMenuLateral">
-                    <span class="navbar-toggler-icon">
-                      <img src="img/Icon/hamburger-icon.svg" alt="Menu">
-                    </span>
-                  </div>
-                  <!-- Nav Links -->
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#Inicio">
-                            <span class="nav-text"> Inicio </span>
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <span class="nav-text"> Servicios </span>
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <span class="nav-text"> Sobre Nosotros </span>
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <span class="nav-text"> Equipo </span>
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <span class="nav-text"> Contactanos </span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-            </nav>
-            <!-- Menu Lateral Desplegable (OFF Canvas) -->
-            <section class="offcanvas offcanvas-start" id="navbarMenuLateral" tabindex="-1">
-            <!-- Encabezado OFF Canvas -->
-            <div class="offcanvas-header" data-bs-theme="dark">
-              <!-- Logo CO-DEV -->
-              <img src="img/Icon/code-slash-icon.svg" alt="Code Slash">
-              <!-- Button Cancel -->
-              <button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="offcanvas"></button>
-            </div>
-            <!-- Main OFF Canvas -->
-            <div class="offcanvas-body">
-              <!-- Nav Links OFF Canvas -->
-              <ul class="navbar-nav fs-4 justify-content-evenly">
-                <li class="nav-item p-3 py-md-1">
-                  <a class="nav-link-offcanvas" href="#Inicio"> 
-                    <span class="nav-text-offcanvas"> Inicio </span> 
-                  </a>
-                </li>
-                <li class="nav-item p-3 py-md-1">
-                  <a class="nav-link-offcanvas" href="#">
-                    <span class="nav-text-offcanvas"> Servicios </span>
-                  </a>
-                </li>
-                <li class="nav-item p-3 py-md-1">
-                  <a class="nav-link-offcanvas" href="#">
-                    <span class="nav-text-offcanvas"> Sobre Nosotros </span>
-                  </a>
-                </li>
-                <li class="nav-item p-3 py-md-1">
-                  <a class="nav-link-offcanvas" href="#">
-                    <span class="nav-text-offcanvas"> Equipo </span>
-                  </a>
-                </li>
-                <li class="nav-item p-3 py-md-1">
-                  <a class="nav-link-offcanvas" href="#">
-                    <span class="nav-text-offcanvas"> Contactenos </span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <!-- Footer OFF Canvas -->
-            <div class="offcanvas-redes-sociales">
-              <!-- Icon Redes Sociales -->
-              <a href="#"><img src="img/Icon/whatsapp-icon.svg" alt="Whatsapp" class="px-2"></a>
-              <a href="#"><img src="img/Icon/instagram-icon.svg" alt="Instagram" class="px-2"></a>
-              <a href="#"><img src="img/Icon/facebook-icon.svg" alt="Facebook" class="px-2"></a>
-              <a href="#"><img src="img/Icon/linkedin-icon.svg" alt="Linkedin" class="px-2"></a>
-              <a href="#"><img src="img/Icon/github-icon.svg" alt="GitHub" class="px-2"></a>
-            </div>
-            </section>
-            <!-- Seccion Hero -->
-            <section id="hero">
-                <div class="container">
-                    <div class="row">
-                        <article class="col-md-lg-12">
-                            <!-- Container Carrusel -->
-                            <div class="carousel slide" data-bs-ride="carousel" id="carouselAutoplaying">
-                                <!-- Carrusel de Titulos y Parrafos --> 
-                                <div class="carousel-inner">
-                                    <!-- Primer Elemento del Carrusel (activo) -->
-                                    <div class="carousel-item active">
-                                        <div class="container-titulo-text">
-                                            <h1 class="carousel-titulo-text"> 
-                                                Potencia Tu Negocio 
-                                            </h1>
-                                        </div>
-                                        <div class="container-parrafo-text"> 
-                                            <p class="carousel-parrafo-text">
-                                                Confía en nosotros para llevar tu negocio al siguiente nivel
-                                                tecnológico y destacarte en un mundo digital en constante evolución. 
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- Segundo Elemento del Carrusel -->
-                                    <div class="carousel-item">
-                                        <div class="container-titulo-text"> 
-                                            <h1 class="carousel-titulo-text"> 
-                                                Seguridad Y Confidencialidad
-                                            </h1>
-                                        </div>
-                                        <div class="container-parrafo-text">
-                                            <p class="carousel-parrafo-text">
-                                                Priorizamos la seguridad de tus datos y la confidencialidad de tu negocio
-                                                en cada etapa del desarrollo y la implementación. 
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- Tercer Elemento del Carrusel -->
-                                    <div class="carousel-item">
-                                        <div class="container-titulo-text">
-                                            <h1 class="carousel-titulo-text"> 
-                                                Soporte Técnico integral
-                                            </h1>
-                                        </div>
-                                        <div class="container-parrafo-text">
-                                            <p class="carousel-parrafo-text">
-                                                No estás solo en este viaje tecnológico. Ofrecemos un soporte técnico integral
-                                                que cubre tanto el software como el hardware de tu negocio. 
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Botones Indicadores del Carrusel -->
-                                <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#carouselAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                    <button type="button" data-bs-target="#carouselAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                    <button type="button" data-bs-target="#carouselAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <!-- Boton Siguiente Seccion -->
-                <a href="#" target="_blank" class="float-2">
-                    <img src="img/Icon/chevron-down-icon.svg" alt="Down">
+  <!-- ====== HEADER ====== -->
+  <header id="Inicio" class="header-carousel">
+    <!-- Capa de Traslucido -->
+    <div class="header-overlay"></div>
+    <!-- Container Seccion Inicio -->
+    <div class="container header-content">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg bg-codev">
+        <div class="container">
+          <!-- Logo de la Empresa CO-DEV -->
+          <a class="navbar-brand" href="#Inicio">CO-DEV</a>
+          <!-- Nav Button -->
+          <div class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarMenuLateral">
+            <span class="navbar-toggler-icon">
+              <img src="img/Icon/hamburger-icon.svg" alt="Menu">
+            </span>
+          </div>
+          <!-- Nav Links -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#Inicio">
+                  <span class="nav-text"> Inicio </span>
                 </a>
-            </section> 
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span class="nav-text"> Servicios </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span class="nav-text"> Sobre Nosotros </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span class="nav-text"> Equipo </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span class="nav-text"> Contactanos </span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </header>
-    <!-- End Header -->
-    <!-- Boton Whatsapp -->
-    <a href="#" target="_blank" class="float">
-        <img src="img/Icon/whatsapp-icon.svg" alt="Whatsapp">
-    </a>
-    <!-- JS BOOTSTRAP -->
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <!-- JS SWIPER -->
-    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
-    <!-- Archivo JS -->
-    <script src="/JS/background-image.js"></script>
+      </nav>
+      <!-- Menu Lateral Desplegable (OFF Canvas) -->
+      <section class="offcanvas offcanvas-start" id="navbarMenuLateral" tabindex="-1">
+        <!-- Encabezado OFF Canvas -->
+        <div class="offcanvas-header" data-bs-theme="dark">
+          <!-- Logo CO-DEV -->
+          <img src="img/Icon/code-slash-icon.svg" alt="Code Slash">
+          <!-- Button Cancel -->
+          <button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <!-- Main OFF Canvas -->
+        <div class="offcanvas-body">
+          <!-- Nav Links OFF Canvas -->
+          <ul class="navbar-nav fs-4 justify-content-evenly">
+            <li class="nav-item p-3 py-md-1">
+              <a class="nav-link-offcanvas" href="#Inicio">
+                <span class="nav-text-offcanvas"> Inicio </span>
+              </a>
+            </li>
+            <li class="nav-item p-3 py-md-1">
+              <a class="nav-link-offcanvas" href="#">
+                <span class="nav-text-offcanvas"> Servicios </span>
+              </a>
+            </li>
+            <li class="nav-item p-3 py-md-1">
+              <a class="nav-link-offcanvas" href="#">
+                <span class="nav-text-offcanvas"> Sobre Nosotros </span>
+              </a>
+            </li>
+            <li class="nav-item p-3 py-md-1">
+              <a class="nav-link-offcanvas" href="#">
+                <span class="nav-text-offcanvas"> Equipo </span>
+              </a>
+            </li>
+            <li class="nav-item p-3 py-md-1">
+              <a class="nav-link-offcanvas" href="#">
+                <span class="nav-text-offcanvas"> Contactenos </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Footer OFF Canvas -->
+        <div class="offcanvas-redes-sociales">
+          <!-- Icon Redes Sociales -->
+          <a href="#"><img src="img/Icon/whatsapp-icon.svg" alt="Whatsapp" class="px-2"></a>
+          <a href="#"><img src="img/Icon/instagram-icon.svg" alt="Instagram" class="px-2"></a>
+          <a href="#"><img src="img/Icon/facebook-icon.svg" alt="Facebook" class="px-2"></a>
+          <a href="#"><img src="img/Icon/linkedin-icon.svg" alt="Linkedin" class="px-2"></a>
+          <a href="#"><img src="img/Icon/github-icon.svg" alt="GitHub" class="px-2"></a>
+        </div>
+      </section>
+      <!-- Seccion Hero -->
+      <section id="hero">
+        <div class="container">
+          <div class="row">
+            <article class="col-md-lg-12">
+              <!-- Container Carrusel -->
+              <div class="carousel slide" data-bs-ride="carousel" id="carouselAutoplaying">
+                <!-- Carrusel de Titulos y Parrafos -->
+                <div class="carousel-inner">
+                  <!-- Primer Elemento del Carrusel (activo) -->
+                  <div class="carousel-item active">
+                    <div class="container-titulo-text">
+                      <h1 class="carousel-titulo-text">
+                        Potencia Tu Negocio
+                      </h1>
+                    </div>
+                    <div class="container-parrafo-text">
+                      <p class="carousel-parrafo-text">
+                        Confía en nosotros para llevar tu negocio al siguiente nivel
+                        tecnológico y destacarte en un mundo digital en constante evolución.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Segundo Elemento del Carrusel -->
+                  <div class="carousel-item">
+                    <div class="container-titulo-text">
+                      <h1 class="carousel-titulo-text">
+                        Seguridad Y Confidencialidad
+                      </h1>
+                    </div>
+                    <div class="container-parrafo-text">
+                      <p class="carousel-parrafo-text">
+                        Priorizamos la seguridad de tus datos y la confidencialidad de tu negocio
+                        en cada etapa del desarrollo y la implementación.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Tercer Elemento del Carrusel -->
+                  <div class="carousel-item">
+                    <div class="container-titulo-text">
+                      <h1 class="carousel-titulo-text">
+                        Soporte Técnico integral
+                      </h1>
+                    </div>
+                    <div class="container-parrafo-text">
+                      <p class="carousel-parrafo-text">
+                        No estás solo en este viaje tecnológico. Ofrecemos un soporte técnico integral
+                        que cubre tanto el software como el hardware de tu negocio.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Botones Indicadores del Carrusel -->
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselAutoplaying" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselAutoplaying" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselAutoplaying" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <!-- Boton Siguiente Seccion -->
+        <a href="#" target="_blank" class="float-2">
+          <img src="img/Icon/chevron-down-icon.svg" alt="Down">
+        </a>
+      </section>
+    </div>
+  </header>
+  <!-- End Header -->
+  <!-- Boton Whatsapp -->
+  <a href="#" target="_blank" class="float">
+    <img src="img/Icon/whatsapp-icon.svg" alt="Whatsapp">
+  </a>
+  <!-- ====== EQUIPO ====== -->
+  <section id="Equipo">
+    <div class="container-fluid">
+      <!-- Encabezado Equipo -->
+      <div class="row">
+        <div class="col-lg-8 col-md-8 mx-auto">
+          <!-- Encabezado Equipo -->
+          <div class="container-header-equipo text-center">
+            <!-- Titulo Equipo -->
+            <h1 class="titulo-equipo">
+              Equipo
+            </h1>
+            <!-- Linea Equipo -->
+            <div class="container-linea-equipo mb-4">
+              <hr>
+            </div>
+            <!-- Parrafo Equipo -->
+            <h2 class="parrafo-equipo">
+              ¡Conoce al increíble equipo que hace posible nuestra misión!
+              Aquí, te invitamos a explorar más sobre las personas detrás de nuestro trabajo.
+            </h2>
+          </div>
+        </div>
+      </div>
+      <!-- Slider Cards Equipo -->
+      <div class="equipo-container">
+        <div class="card__container swiper">
+          <div class="card__content">
+            <div class="swiper-wrapper">
+              <!-- Tomás Rodriguez -->
+              <article class="card__article swiper-slide shadow">
+                <div class="card_bg_gradient">
+                  <!-- Contenedor Gradiente fondo de perfil -->
+                  <div class="card_imageperfil_tr">
+                    <!-- Imagen Perfil -->
+                  </div>
+                  <!-- Titulo Card -->
+                  <h1 class="titulo__card">
+                    Tomás Rodriguez
+                  </h1>
+                  <!-- Parrafo Card -->
+                  <h2 class="subtitulo__card">
+                    Full Stack Developer
+                  </h2>
+                </div>
+                <!-- Container Redes Sociales -->
+                <div class="container_rs_card">
+                  <!-- Linkdin -->
+                  <a href="#" class="linkedin-icon">
+                    <img src="img/Icon/linkedin-icon.svg" alt="Linkedin" class="card-icon">
+                  </a>
+                  <!-- Github -->
+                  <a href="#" class="github-icon">
+                    <img src="img/Icon/github-icon.svg" alt="GitHub" class="card-icon">
+                  </a>
+                  <!-- Instagram -->
+                  <a href="#" class="instagram-icon">
+                    <img src="img/Icon/instagram-icon.svg" alt="Instagram" class="card-icon">
+                  </a>
+                </div>
+              </article>
+              <!-- Jeronimo Huincamán -->
+              <article class="card__article swiper-slide shadow">
+                <div class="card_bg_gradient">
+                  <!-- Contenedor Gradiente fondo de perfil -->
+                  <div class="card_imageperfil_jh">
+                    <!-- Imagen Perfil -->
+                  </div>
+                  <!-- Titulo Card -->
+                  <h1 class="titulo__card">
+                    Jeronimo Huincamán
+                  </h1>
+                  <!-- Parrafo Card -->
+                  <h2 class="subtitulo__card">
+                    Full Stack Developer
+                  </h2>
+                </div>
+                <!-- Container Redes Sociales -->
+                <div class="container_rs_card">
+                  <!-- Linkdin -->
+                  <a href="#" class="linkedin-icon">
+                    <img src="img/Icon/linkedin-icon.svg" alt="Linkedin" class="card-icon">
+                  </a>
+                  <!-- Github -->
+                  <a href="#" class="github-icon">
+                    <img src="img/Icon/github-icon.svg" alt="GitHub" class="card-icon">
+                  </a>
+                  <!-- Instagram -->
+                  <a href="#" class="instagram-icon">
+                    <img src="img/Icon/instagram-icon.svg" alt="Instagram" class="card-icon">
+                  </a>
+                </div>
+              </article>
+              <!-- Lucas Di Luca -->
+              <article class="card__article swiper-slide shadow">
+                <div class="card_bg_gradient">
+                  <!-- Contenedor Gradiente fondo de perfil -->
+                  <div class="card_imageperfil_ld">
+                    <!-- Imagen Perfil -->
+                  </div>
+                  <!-- Titulo Card -->
+                  <h1 class="titulo__card">
+                    Lucas Di Luca
+                  </h1>
+                  <!-- Parrafo Card -->
+                  <h2 class="subtitulo__card">
+                    Full Stack Developer
+                  </h2>
+                </div>
+                <!-- Container Redes Sociales -->
+                <div class="container_rs_card">
+                  <!-- Linkdin -->
+                  <a href="#" class="linkedin-icon">
+                    <img src="img/Icon/linkedin-icon.svg" alt="Linkedin" class="card-icon">
+                  </a>
+                  <!-- Github -->
+                  <a href="#" class="github-icon">
+                    <img src="img/Icon/github-icon.svg" alt="GitHub" class="card-icon">
+                  </a>
+                  <!-- Instagram -->
+                  <a href="#" class="instagram-icon">
+                    <img src="img/Icon/instagram-icon.svg" alt="Instagram" class="card-icon">
+                  </a>
+                </div>
+              </article>
+              <!-- Santiago Rojas -->
+              <article class="card__article swiper-slide shadow">
+                <div class="card_bg_gradient">
+                  <!-- Contenedor Gradiente fondo de perfil -->
+                  <div class="card_imageperfil_sr">
+                    <!-- Imagen Perfil -->
+                  </div>
+                  <!-- Titulo Card -->
+                  <h1 class="titulo__card">
+                    Santiago Rojas
+                  </h1>
+                  <!-- Parrafo Card -->
+                  <h2 class="subtitulo__card">
+                    Full Stack Developer
+                  </h2>
+                </div>
+                <!-- Container Redes Sociales -->
+                <div class="container_rs_card">
+                  <!-- Linkdin -->
+                  <a href="#" class="linkedin-icon">
+                    <img src="img/Icon/linkedin-icon.svg" alt="Linkedin" class="card-icon">
+                  </a>
+                  <!-- Github -->
+                  <a href="#" class="github-icon">
+                    <img src="img/Icon/github-icon.svg" alt="GitHub" class="card-icon">
+                  </a>
+                  <!-- Instagram -->
+                  <a href="#" class="instagram-icon">
+                    <img src="img/Icon/instagram-icon.svg" alt="Instagram" class="card-icon">
+                  </a>
+                </div>
+              </article>
+              <!-- Valentino Valdebenito -->
+              <article class="card__article swiper-slide shadow">
+                <div class="card_bg_gradient">
+                  <!-- Contenedor Gradiente fondo de perfil -->
+                  <div class="card_imageperfil_vv">
+                    <!-- Imagen Perfil -->
+                  </div>
+                  <!-- Titulo Card -->
+                  <h1 class="titulo__card">
+                    Valentino Valdebenito
+                  </h1>
+                  <!-- Parrafo Card -->
+                  <h2 class="subtitulo__card">
+                    Full Stack Developer
+                  </h2>
+                </div>
+                <!-- Container Redes Sociales -->
+                <div class="container_rs_card">
+                  <!-- Linkdin -->
+                  <a href="#" class="linkedin-icon">
+                    <img src="img/Icon/linkedin-icon.svg" alt="Linkedin" class="card-icon">
+                  </a>
+                  <!-- Github -->
+                  <a href="#" class="github-icon">
+                    <img src="img/Icon/github-icon.svg" alt="GitHub" class="card-icon">
+                  </a>
+                  <!-- Instagram -->
+                  <a href="#" class="instagram-icon">
+                    <img src="img/Icon/instagram-icon.svg" alt="Instagram" class="card-icon">
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+          <!-- Navigation buttons -->
+          <div class="swiper-button-next">
+            <i class="ri-arrow-right-s-line"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="ri-arrow-left-s-line"></i>
+          </div>
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Equipo -->
+  <!-- JS BOOTSTRAP -->
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <!-- JS SWIPER -->
+  <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+  <!-- Archivo JS -->
+  <script src="JS/background-image.js"></script>
+  <script src="JS/slide-equipo.js"></script>
 </body>
+
 </html>

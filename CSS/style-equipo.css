@@ -1,0 +1,287 @@
+/* ======== Fuentes ====== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;500&family=Source+Sans+3&display=swap');
+
+/* ====== Estilos seccion de equipo (Equipo) ====== */
+
+/* Relleno entre la pagina y los elementos */
+
+#Equipo {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+/* Estilo del titulo */
+
+.titulo-equipo {
+    color: rgba(42, 110, 255, 0.836);
+    font-family: 'Source Sans 3';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px;
+    text-transform: capitalize;
+}
+
+/* Estilos de la linea */
+
+.container-linea-equipo {
+    background: rgb(42, 110, 255, 0.836);
+    border-radius: 10px;
+    width: 72px;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: -20px;
+}
+
+/* Estilos del parrafo */
+
+.parrafo-equipo {
+    color: rgba(38, 38, 38, 0.60);
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    width: 98%;
+    margin: 0 auto;
+}
+
+.equipo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+  
+.card__container {
+    padding-block: 5rem;
+}
+  
+.card__content {
+    height: 450px;
+    margin-inline: 1.75rem;
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+  
+.card__article {
+    width: 300px;
+    height: 380px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+  
+.card__article:hover {
+    width: 100%;
+    height: 430px;
+}
+  
+.card_bg_gradient {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+    background: linear-gradient(255deg, #00DEFF 0%, #056BE8 100%);
+}
+  
+.card_imageperfil_tr {
+    /* Tomas Rodriguez */
+    width: 224px;
+    height: 224px;
+    border-radius: 50%;
+    border: 6px solid #FFFFFF;
+    background-image: url('../img/Equipo/TomasRodriguez.jpg');
+    background-size: cover;
+    background-position: center; 
+    z-index: 1;
+    margin: auto;
+    margin-top: 40px;
+}
+  
+.card_imageperfil_jh {
+    /* Jeronimo Huincamán */
+    width: 224px;
+    height: 224px;
+    border-radius: 50%;
+    border: 6px solid #FFFFFF;
+    background-image: url('../img/Equipo/JeronimoHuincaman.jpg');
+    background-size: cover;
+    background-position: center; 
+    z-index: 1;
+    margin: auto;
+    margin-top: 40px;
+}
+  
+.card_imageperfil_ld {
+    /* Lucas Di Luca */
+    width: 224px;
+    height: 224px;
+    border-radius: 50%;
+    border: 6px solid #FFFFFF;
+    background-image: url('../img/Equipo/LucasDiLuca.jpg');
+    background-size: cover;
+    background-position: center; 
+    z-index: 1;
+    margin: auto;
+    margin-top: 40px;  
+}
+  
+.card_imageperfil_sr {
+    /* Santiago Rojas */
+    width: 224px;
+    height: 224px;
+    border-radius: 50%;
+    border: 6px solid #FFFFFF;
+    background-image: url('../img/Equipo/SantiagoRojas.jpg');
+    background-size: cover;
+    background-position: center; 
+    z-index: 1;
+    margin: auto;
+    margin-top: 40px;
+}
+  
+.card_imageperfil_vv {
+    /* Valentino Valdebenito */
+    width: 224px;
+    height: 224px;
+    border-radius: 50%;
+    border: 6px solid #FFFFFF;
+    background-image: url('../img/Equipo/ValentinoValdebenito.jpg');
+    background-size: cover;
+    background-position: center; 
+    z-index: 1;
+    margin: auto;
+    margin-top: 40px;
+}
+  
+.titulo__card {
+    color: #181817;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 20px;
+}
+  
+.subtitulo__card {
+    color: #056CF2;
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 15px;
+}
+  
+.container_rs_card {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateY(20px);
+}
+  
+.card_article:hover .containerrs_card {
+    opacity: 1;
+    transform: translateY(0px);
+}
+  
+/* Tamaño y Espaciado Iconos */
+  
+.card-icon {
+    width: 26px;
+    height: 26px;
+    margin: 0 10px;
+}
+  
+/* Estilo del icono de LinkedIn */
+.linkedin-icon .card-icon {
+    filter: brightness(0) saturate(100%) invert(24%) sepia(81%) saturate(5168%) hue-rotate(186deg) brightness(98%) contrast(101%);
+}
+  
+/* Estilo del icono de GitHub */
+.github-icon .card-icon {
+    filter: invert(100%); 
+}
+  
+/* Estilo del icono de Instagram */
+.instagram-icon .card-icon {
+    filter: brightness(0) saturate(100%) invert(36%) sepia(99%) saturate(766%) hue-rotate(310deg) brightness(88%) contrast(103%); 
+}
+    
+/* Swiper class */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    content: "";
+}
+  
+.swiper-button-prev,
+.swiper-button-next {
+    width: initial;
+    height: initial;
+    font-size: 3rem;
+    color: hsl(195, 75%, 52%);
+    display: none;
+}
+  
+.swiper-button-prev {
+    left: 0;
+}
+  
+.swiper-button-next {
+    right: 0;
+}
+  
+.swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    background-color: hsl(212, 32%, 40%);
+    opacity: 1;
+}
+  
+.swiper-pagination-bullet-active {
+    background-color: hsl(195, 75%, 52%);
+}
+  
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+    .card_bg_gradient {
+      padding: 1rem;
+    }
+}
+  
+/* For medium devices */
+@media screen and (min-width: 768px) {
+    .card__content {
+      margin-inline: 3rem;
+    }
+  
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: block;
+    }
+}
+  
+/* For large devices */
+@media screen and (min-width: 1120px) {
+    .card__container {
+      max-width: 1120px;
+    }
+  
+    .swiper-button-prev {
+      left: -1rem;
+    }
+    .swiper-button-next {
+      right: -1rem;
+    }
+}
