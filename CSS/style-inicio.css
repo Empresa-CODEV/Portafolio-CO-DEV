@@ -74,14 +74,11 @@ nav.bg-codev {
     margin: 0 auto;
 }
 
-.navbar-brand {
-    /* Logo Empresa Tamaño, Color, etc.. */
-    color: var(--bg-Blanco);
-    font-family: Inter;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
+.navbar-brand img {
+    /* Logo Empresa Tamaño */
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
 }
 
 .navbar-brand:hover {
