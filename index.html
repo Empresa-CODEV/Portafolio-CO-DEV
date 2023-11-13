@@ -240,7 +240,8 @@
     <!-- Fin sección Servicios-->    
     <!-- INICIO SECCION SOBRE NOSOTROS-->
     <section>
-      <div id="header">
+      <div id="container">
+        <div id="header">
           <h1>Sobre Nosotros</h1>
           <hr id="divider">
           <h5>
@@ -254,19 +255,19 @@
   
           <div id="circles">
               <div class="circle">
-                  <img src="/Media/baby-solid.svg" alt="Error" class="icon">
+                  <img src="/img/vectores/baby-solid.svg" alt="Error" class="icon">
               </div>
   
               <div class="circle">
-                  <img src="/Media/users-solid.svg" alt="Error" class="icon">
+                  <img src="/img/vectores/users-solid.svg" alt="Error" class="icon">
               </div>
   
               <div class="circle">
-                  <img src="/Media/plane-departure-solid.svg" alt="Error" class="icon">
+                  <img src="/img/vectores/plane-departure-solid.svg" alt="Error" class="icon">
               </div>   
               
               <div class="circle">
-                  <img src="/Media/check-solid.svg" alt="Error" class="icon">
+                  <img src="/img/vectores/check-solid.svg" alt="Error" class="icon">
               </div>
           </div>
   
@@ -310,10 +311,25 @@
           </div>
   
           <div id="big-vector">
-              <img src="/Media/team checklist-amico.png" alt="" id="team-check">
+            <div class="blob">
+              <div class="blob-overlay">
+                  <div class="Slider">
+                      <div class="slide active">
+                          <img src="/img/vectores/vc-1.svg">
+                      </div>
+                      <div class="slide">
+                          <img src="/img/vectores/vc-2.svg">
+                      </div>
+                      <div class="slide">
+                          <img src="/img/vectores/vc-3.svg">
+                      </div>
+                  </div>
+              </div>
+          </div>
           </div>
           
           
+      </div>
       </div>
   </section>
     <!-- FIN SECCION SOBRE NOSOTROS -->
@@ -321,5 +337,7 @@
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <!-- Archivo JS -->
     <script src="/JS/background-image.js"></script>
+    <!-- SLIDER -->
+    <script src="/JS/slider-vector.js"></script>
 </body>
 </html>

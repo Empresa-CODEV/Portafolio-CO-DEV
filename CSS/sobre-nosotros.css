@@ -1,8 +1,9 @@
-*{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@700&family=Roboto+Flex:opsz,wght@8..144,200&display=swap');
 h1{
     color: #7ba9f4;
+}
+#container{
+    margin: 3%;
 }
 #divider {
     border-top: 3px solid #7ba9f4;
@@ -11,6 +12,11 @@ h1{
 #header{
     color: #a4a4a4;
     text-align: center;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 h5{
     color: #737373;
@@ -41,23 +47,87 @@ h5{
     color: #111111;
 }
 #circles{
-    width: 10%;
+    width: 6%;
     height: 95vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 }
-
-
 #big-vector{
     max-width: 50%;
     height: 100%;
+    margin-top: 10%;
     margin: 2%;
    display: flex;
    justify-content: center;
    align-items: center;
 }
 #team-check{
-    width: 70%;
-    height: 70%;
+    width: 50%;
+    height: 50%;
+    z-index: 1;
+}
+
+#fondo-team-check{
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+/*----------------- Big Vector Slider --------------*/
+
+.blob {
+    background-color: #056CF2;
+    width: 662px;
+    height: 688px;
+    border-radius: 150% 90% 130% 100%;
+    filter: drop-shadow(0px 4px 4px rgba(35, 35, 35, 0.80)); 
+}
+
+.blob-overlay {
+  /* Capa de Traslucido */
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF26;
+  border-radius: 150% 90% 130% 100%; 
+}
+
+.blob img {
+    width: 558px;
+    height: 558px;
+    margin-left: 60px;
+    margin-top: 70px;
+}
+
+/* Slider */
+.slide {
+    display: none;
+    animation: fadeOut 1s ease-in-out forwards;
+}
+  
+.active {
+    display: block;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+  
+@keyframes fadeOut {
+    from {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+}
+  
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
 }
