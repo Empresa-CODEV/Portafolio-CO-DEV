@@ -322,59 +322,6 @@ nav.bg-codev {
     height: 9px;
 }
 
-
-/* ====== ESTILOS DE LA SECCION SERVICIOS ====== */
-
-.section{
-    /*Relleno entre la pagina y los elementos*/
-    padding-top: 50px;
-    padding-bottom: 150px;
-}
-
-.bg-color{
-    /*Color de fondo para la seccion*/
-    background-color: #c0c0c23a
-}
-
-.sub-heading h1 {
-    /*Estilo del titulo secundario*/
-    font-weight: 700;
-    color: rgba(42, 110, 255, 0.836);
-}
-
-.sub-heading h2{
-    /*Estilo del subtitulo secundario*/
-    font-weight: 400;
-    font-size: 25px;
-}
-
-.service-box{
-    /*Estilos del contenedor de servicios, color, bordes, etc*/
-    padding: 20px;
-    background-color: #fff;
-    transition: .4s;
-    transform: translateY(0);
-    border-radius: 20px;
-}
-
-.service-content h3{
-    /*Estilos del Titulo de cada servicio*/
-    font-size: 24px;
-    font-weight:700;
-    color: rgb(58, 58, 58);
-}
-
-.service-box:hover{
-    /*Cuando el mouse pasa por encima del servicio, se le agregan estilos al mismo*/
-    box-shadow: 0 0 30px #272525;
-    transform: translateY(-.5rem);
-}
-
-.service-content h3:hover{
-    /*Cuando el mouse pasa por encima del titulo del servicio, se le asigna el color dado*/
-    color: rgb(15, 119, 255);
-}
-
 /* ====== Estilos Responsivos ====== */
 
 @media (max-width: 992px) {

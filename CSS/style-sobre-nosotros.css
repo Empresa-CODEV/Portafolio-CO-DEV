@@ -81,3 +81,59 @@
     flex-direction: column;
     justify-content: space-around;
 }
+
+.blob {
+    background-color: #056CF2;
+    width: 662px;
+    height: 688px;
+    border-radius: 150% 90% 130% 100%;
+    filter: drop-shadow(0px 4px 4px rgba(35, 35, 35, 0.80)); 
+}
+
+.blob-overlay {
+  /* Capa de Traslucido */
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF26;
+  border-radius: 150% 90% 130% 100%; 
+}
+
+.blob img {
+    width: 558px;
+    height: 558px;
+    margin-left: 60px;
+    margin-top: 70px;
+}
+
+/* Slider */
+.slide-sb {
+    display: none;
+    animation: fadeOut 1s ease-in-out forwards;
+}
+  
+.active-sb {
+    display: block;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+  
+@keyframes fadeOut {
+    from {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+}
+  
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
