@@ -7,9 +7,9 @@ carousel.addEventListener('slid.bs.carousel', function(event) {
   var activeSlideIndex = event.to; 
   // Se define un array con rutas de imagenes las cuales se utilizaran para el fondo de la seccion de Inicio cordinados con el carrusel.
   var imagePaths = [
-    'img/Img-Inicio-1.jpg',
-    'img/Img-Inicio-2.jpg',
-    'img/Img-Inicio-3.jpg'
+    'img/Inicio/Img-Inicio-1.jpg',
+    'img/Inicio/Img-Inicio-2.jpg',
+    'img/Inicio/Img-Inicio-3.jpg'
   ];
   // Cambia el fondo del elemento con la clase definida ".header-carousel" al fondo correspondiente con la diapositiva activa.
   header.style.backgroundImage = 'url(' + imagePaths[activeSlideIndex] + ')';
