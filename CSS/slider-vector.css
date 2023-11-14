@@ -22,12 +22,12 @@
 }
 
 /* Slider */
-.slide {
+.slide-sb {
     display: none;
     animation: fadeOut 1s ease-in-out forwards;
 }
   
-.active {
+.active-sb {
     display: block;
     animation: fadeIn 1s ease-in-out forwards;
 }
