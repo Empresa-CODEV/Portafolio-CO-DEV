@@ -1,0 +1,83 @@
+/* ======== Fuentes ====== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;500&family=Source+Sans+3&display=swap');
+
+/* ====== Estilos seccion de sobre nosotros (Sobre Nosotros) ====== */
+
+/* Relleno entre la pagina y los elementos */
+
+#Sobre_Nostros {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+/* Estilo del titulo */
+
+.titulo-sb {
+    color: rgba(42, 110, 255, 0.836);
+    font-family: 'Source Sans 3';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px;
+    text-transform: capitalize;
+    margin-top: 30px;
+}
+
+/* Estilos de la linea */
+
+.container-linea-sb {
+    background: rgb(42, 110, 255, 0.836);
+    border-radius: 10px;
+    width: 100px;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: -10px;
+}
+
+/* Estilos del parrafo */
+
+.parrafo-sb {
+    color: rgba(38, 38, 38, 0.60);
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    width: 98%;
+    margin: 0 auto;
+}
+
+#content {
+    display: flex;
+}
+
+.icon {
+    filter: invert(100%);
+    height: 60%;
+    width: 60%;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #5098f6ff;
+    border-radius: 50%;
+}
+
+#texto {
+    text-align: left;
+    white-space: wrap;
+    max-width: 40%;
+    color: #111111;
+}
+
+#circles {
+    width: 10%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
