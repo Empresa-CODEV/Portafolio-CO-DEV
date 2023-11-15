@@ -8,16 +8,59 @@
 }
 
 /* ====== Contactenos section ====== */
+
+/* ======== Fuentes ====== */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@500&family=Source+Sans+3&display=swap');
+
 .container-contactenos {
     background-color: var(--bg-Botones);
 }
+
+/* Estilo del titulo */
+
+.titulo-cn {
+    color: #F2F2F2;
+    font-family: 'Source Sans 3';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px;
+    text-transform: capitalize;
+}
+
+/* Estilos de la linea */
+
+.container-linea-cn {
+    background: #F2F2F2;
+    border-radius: 10px;
+    width: 95px;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: -10px;
+}
+
+/* Estilos del parrafo */
+
+.parrafo-cn {
+    color: #F2F2F2;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.card-cn {
+    margin-top: 60px;
+}
+
 .btn.enviar{
     background-color: var(--bg-Botones);
 }
-hr {
-    border-color:white;
-    margin: 0 25.5em 1em;
-}
+
 textarea {
     resize: none;
 }
