@@ -24,3 +24,12 @@ let swiperCards = new Swiper(".card__content", {
     },
   },
 });
+
+const divs = document.querySelectorAll('.container_rs_card')
+divs.forEach((div) => {
+  let a_icon = Array.from(div.children)
+  // Recorre cada enlace y añade la propiedad target="_blank"
+  for (var i = 0; i < a_icon.length; i++) {
+    a_icon[i].setAttribute("target", "_blank");
+  }
+})
