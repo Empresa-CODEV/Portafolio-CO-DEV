@@ -1,4 +1,6 @@
-/* ====== ESTILOS DE LA SECCION SERVICIOS ====== */
+/* ====== Fuentes ====== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Source+Sans+3:wght@400;700&display=swap');
 
 .section{
     /*Relleno entre la pagina y los elementos*/
@@ -13,14 +15,34 @@
 
 .sub-heading h1 {
     /*Estilo del titulo secundario*/
-    font-weight: 700;
     color: rgba(42, 110, 255, 0.836);
+    font-family: 'Source Sans 3';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px;
+    text-transform: capitalize;
+}
+
+.container-linea-servicios {
+    background: rgb(42, 110, 255, 0.836);
+    border-radius: 10px;
+    width: 100px;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: -10px;
 }
 
 .sub-heading h2{
     /*Estilo del subtitulo secundario*/
-    font-weight: 400;
-    font-size: 25px;
+    color: rgba(38, 38, 38, 0.60);
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    width: 98%;
+    margin: 0 auto;
 }
 
 .service-box{
@@ -34,9 +56,14 @@
 
 .service-content h3{
     /*Estilos del Titulo de cada servicio*/
-    font-size: 24px;
-    font-weight:700;
-    color: rgb(58, 58, 58);
+    color: #111;
+    font-family: 'Source Sans 3';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 72px;
+    text-transform: capitalize;
+    transition: color 0.4s ease;
 }
 
 .service-box:hover{
@@ -48,4 +75,25 @@
 .service-content h3:hover{
     /*Cuando el mouse pasa por encima del titulo del servicio, se le asigna el color dado*/
     color: rgb(15, 119, 255);
+}
+
+.container-linea-card {
+    background: #056CF2;
+    border-radius: 10px;
+    width: 60px;
+    height: 1px;
+    margin: 0 auto;
+    margin-top: -20px;
+}
+
+.service-content p {
+    /*Estilos del Parrafo de cada servicio */
+    color: rgba(115, 115, 115, 0.90);
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    width: 98%;
+    margin: 0 auto;
 }
