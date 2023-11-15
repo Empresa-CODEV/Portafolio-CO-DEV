@@ -43,7 +43,6 @@
     background-image: url('../img/Inicio/Img-Inicio-1.jpg');
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
     transition: background-image 0.5s ease;
 }
 
@@ -53,7 +52,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: rgba(1, 6, 38, 0.9);
 }
 
@@ -170,6 +169,7 @@ nav.bg-codev {
 .offcanvas {
     /* Color de Fondo de OFF Canvas */
     background: var(--bg-Inicio);
+    max-width: 250px;
 }
 
 .nav-link-offcanvas {
@@ -205,14 +205,14 @@ nav.bg-codev {
 .nav-link-offcanvas:hover .nav-text-offcanvas::before, .nav-link-offcanvas:hover .nav-text-offcanvas::after {
     /* Hover Elemento "<" y ">" */
     color: var(--bg-Blanco);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
 }
 
 .nav-link-offcanvas:hover {
     /* Hover Texto */
     color: var(--bg-Blanco);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
 }
 
