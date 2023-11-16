@@ -5,7 +5,7 @@
 
 /* Relleno entre la pagina y los elementos */
 
-#Sobre_Nostros {
+#Sobre_Nosotros {
     padding-top: 50px;
     padding-bottom: 100px;
 }
@@ -47,62 +47,96 @@
     margin: 0 auto;
 }
 
-#content {
+.container-circle-3 {
+    margin-top: -70px;
+}
+
+.circle {
+    width: 64px;
+    height: 64px;
+    background-color: #056CF2;
+    border-radius: 50%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px 30px 50px;
 }
 
 .icon {
     filter: invert(100%);
-    height: 60%;
     width: 60%;
+    height: 60%;
 }
 
-.circle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    background-color: #5098f6ff;
-    border-radius: 50%;
+.info-1 {
+    margin-top: 60px;
 }
 
-#texto {
-    text-align: left;
-    white-space: wrap;
-    max-width: 40%;
-    color: #111111;
+
+.titulo-info-sb {
+    color: #111;
+    text-align: start;
+    font-family: 'Source Sans 3';
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px;
+    text-transform: capitalize;
 }
 
-#circles {
-    width: 10%;
-    height: 95vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.parrafo-info-sb {
+    width: 95%;
+    color: rgba(115, 115, 115, 0.90);
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: -20px;
 }
 
 .blob {
     background-color: #056CF2;
-    width: 662px;
-    height: 688px;
+    width: 100%;
+    height: 100vh;
+    max-width: 662px;
+    max-height: 688px;
     border-radius: 150% 90% 130% 100%;
-    filter: drop-shadow(0px 4px 4px rgba(35, 35, 35, 0.80)); 
+    margin-top: 85px;
+    position: relative;
+    overflow: hidden;
 }
 
 .blob-overlay {
   /* Capa de Traslucido */
   width: 100%;
   height: 100%;
-  background-color: #FFFFFF26;
+  background-color: rgba(255, 255, 255, 0.15);
   border-radius: 150% 90% 130% 100%; 
 }
 
 .blob img {
-    width: 558px;
-    height: 558px;
-    margin-left: 60px;
-    margin-top: 70px;
+    width: 100%;
+    height: auto;
+    max-width: 80%; 
+    max-height: 100%;
+    margin-left: 10%;
+    margin-top: 10%; 
+}
+
+@media screen and (max-width: 768px) {
+    .blob {
+        max-width: 400px; 
+        max-height: 400px; 
+        margin-top: 50px; 
+    }
+
+    .blob img {
+        max-width: 70%; 
+        max-height: 70%; 
+        margin-left: 15%; 
+        margin-top: 15%; 
+    }
 }
 
 /* Slider */
