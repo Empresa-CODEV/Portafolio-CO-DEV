@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@500&family=Source+Sans+3&display=swap');
+
 /* ====== Bootstrap config ====== */
 .form-control:focus {
     box-shadow: none;
@@ -11,7 +13,6 @@
 
 /* ======== Fuentes ====== */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@500&family=Source+Sans+3&display=swap');
 
 .container-contactenos {
     background-color: var(--bg-Botones);
